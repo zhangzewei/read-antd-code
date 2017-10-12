@@ -5,4 +5,4 @@
 正文
 
 1. [Index.js](./story/index.js.md)
-
+2. [Icon组件](./story/components/icon.md)
