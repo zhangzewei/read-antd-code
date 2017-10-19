@@ -12,3 +12,6 @@
 
 + Layout
   5. [Grid组件](./story/components/grid.md)
+
++ Navigation
+  6. [Affix组件](./story/components/affix.md)
