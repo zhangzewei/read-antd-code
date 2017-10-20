@@ -419,6 +419,103 @@ export function throttleByAnimationFrameDecorator() {
 
 ```
 
+## 补（装饰器中的get以及set解读）
+
+下来之后我自己模拟了一下上面的装饰器，代码如下，并且通过查询一些资料，知道了get和set是在什么时候被调用的
+
+在写装饰器代码的时候需要在tsconfig.json文件中的`compilerOptions`属性添加一下代码
+`"experimentalDecorators": true `
+
+这个get函数会在类被实例化的时候就进行调用，所以就能够将这些属性赋给外部的target
+
+也就是在this.callDecorator的时候
+
+顺带说一下set函数 会在 this.callDecorator = something 的时候调用
+
+### Demo组件
+```js
+  import * as React from 'react';
+  import * as PropTypes from 'prop-types';
+  import { MyDecorator } from './Decorator';
+
+  export interface DemoProps {
+    helloString?: string;
+  }
+
+  export default class DecoratorTest extends React.Component<DemoProps, any> {
+    static propTypes = {
+      helloString: PropTypes.string,
+    };
+
+    constructor(props) {
+      super(props);
+    }
+
+    @MyDecorator()
+    callDecorator() {
+      console.log('I am in callDecorator');
+    }
+
+    componentDidMount() {
+      this.callDecorator();
+      (this.callDecorator as any).cancel();
+    }
+
+    render() {
+      return (
+        <div>
+          {this.props.helloString}
+        </div>
+      );
+    }
+  }
+```
+
+### 装饰器代码
+
+```js
+  export default function decoratorTest(fn) {
+    console.log('in definingProperty');
+    const throttled = () => {
+      fn();
+    };
+
+    (throttled as any).cancel = () => console.log('cancel');
+
+    return throttled;
+  }
+
+  export function MyDecorator() {
+    return function(target, key, descriptor) {
+      let fn = descriptor.value;
+      let definingProperty = false;
+      console.log('before definingProperty');
+      return {
+        configurable: true,
+        // get: function()这样的写法也是可以执行
+        get() {
+          if (definingProperty || this === target.prototype || this.hasOwnProperty(key)) {
+            return fn;
+          }
+          let boundFn = decoratorTest(fn.bind(this));
+          definingProperty = true;
+          Object.defineProperty(this, key, {
+            value: boundFn,
+            configurable: true,
+            writable: true,
+          });
+          definingProperty = false;
+          return boundFn;
+        },
+      };
+    };
+  }
+```
+
+输顺序结果如图
+
+![decorator](../../images/affix/decorator.png)
+
 ## 完整代码
 
 ```js

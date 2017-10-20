@@ -2,16 +2,22 @@
 
 * [本书简介](README.md)
 
++ 其他
+  + [构建一个简单的react-typescript项目](./story/start_typescript.md)
+
 + 正文
-  1. [Index.js](./story/index.js.md)
-  2. [Icon组件](./story/components/icon.md)
+  + [Index.js](./story/index.js.md)
+  + [Icon组件](./story/components/icon.md)
 
 + Button
-  3. [Button组件](./story/components/button.md)
-  4. [ButtonGroup组件](./story/components/button_group.md)
+
+  + [Button组件](./story/components/button.md)
+  + [ButtonGroup组件](./story/components/button_group.md)
 
 + Layout
-  5. [Grid组件](./story/components/grid.md)
+
+  + [Grid组件](./story/components/grid.md)
 
 + Navigation
-  6. [Affix组件](./story/components/affix.md)
+
+  + [Affix组件](./story/components/affix.md)
