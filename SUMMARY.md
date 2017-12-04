@@ -24,4 +24,8 @@
   + [Affix组件](./story/components/affix.md)
   + [Breadcrumb组件](./story/components/breadcrumb.md)
   + [Dropdown组件](./story/components/dropdown.md)
-    + [Drigger-index.js](./story/components/trigger_index.md)
+    + [Trigger-index.js](./story/components/trigger_index.md)
+
++ Entry
+
+  + [Form组件](./story/components/form.md) 
