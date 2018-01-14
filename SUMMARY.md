@@ -29,3 +29,4 @@
 + Entry
 
   + [Form组件](./story/components/form.md) 
+  + [notification](./story/components/notification.md)
