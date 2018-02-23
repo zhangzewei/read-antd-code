@@ -5,6 +5,7 @@
 + 其他
   + [构建一个简单的react-typescript项目](./story/typescript/start_typescript.md)
   + [使用typescript踩react-redux的坑](./story/typescript/typescript_with_redux.md)
+  + [可视化读书笔记一](./story/visulization/reading_recorder1.md)
 
 + 正文
   + [Index.js](./story/index.js.md)
