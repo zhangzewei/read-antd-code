@@ -1,24 +1,3 @@
-<style>
-  .img-box {
-    height: 500px;
-    width: 100%;
-  }
-
-  .img-box > img {
-    display: block;
-    margin: 0 auto;
-    height: calc(100% - 30px);
-    width: 100%;
-    max-width: 800px
-  }
-
-  .img-box > span {
-    display: block;
-    width: 100%;
-    line-height: 30px;
-    text-align: center;
-  }
-</style>
 > github: [地址](https://github.com/zhangzewei/read-antd-code)
 > gitbook: [地址](https://zhangzewei.gitbooks.io/read-antd-code/content/)
 

@@ -1,24 +1,3 @@
-<style>
-  .img-box {
-    height: 500px;
-    width: 100%;
-  }
-
-  .img-box > img {
-    display: block;
-    margin: 0 auto;
-    height: calc(100% - 30px);
-    width: 100%;
-    max-width: 800px
-  }
-
-  .img-box > span {
-    display: block;
-    width: 100%;
-    line-height: 30px;
-    text-align: center;
-  }
-</style>
 # 读书笔记：可视化是一种艺术 -《不只是美：信息图表设计原理与经典案例》序章 
 
 ## 表达与挖掘的相互关系
