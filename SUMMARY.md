@@ -31,3 +31,7 @@
 
   + [Form组件](./story/components/form.md) 
   + [notification](./story/components/notification.md)
+
++ Core-mind
+  
+  + [how-antd-create-notification](./story/core-mind/how-antd-create-notification.md)
