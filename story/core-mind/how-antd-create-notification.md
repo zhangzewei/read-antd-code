@@ -24,7 +24,7 @@
 
 #### 配图
 
-[!中心思想](../../images/how-antd-creat-notification/notification-class.png)
+![中心思想](../../images/how-antd-creat-notification/notification-class.png)
 
 #### 为什么是这样的
 
