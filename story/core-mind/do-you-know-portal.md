@@ -3,7 +3,7 @@
 
 # 你真的知道 React Portal 吗？
 
-> 作者：markzzw 时间：2019-12-19 &nbsp;&nbsp; 本文相关代码地址：[github]()
+> 作者：markzzw 时间：2019-12-19
 
 ## 简介
 
