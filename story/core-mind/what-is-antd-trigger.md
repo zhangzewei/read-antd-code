@@ -254,8 +254,8 @@ class Trigger extends React.Component {
 
 
 ## 点击Popup外部进行关闭操作-clickOutSide
-关于clickOutSide关闭Popup的由来：是因为这是html的下拉菜单（select）的默认行为，或者说这是浮窗一类的默认行为，也是为了遵从网络无障碍辅助功能，当当前展开按钮是去焦点时，需要将其产生的side-effect消除掉；
-通常实现这个功能的方法是在 window 对象中附上一个 click 事件以关闭弹窗：
+关于 `clickOutSide` 关闭 `Popup` 的由来：是因为这是 `html` 的下拉菜单（`select`）的默认行为，或者说这是浮窗一类的默认行为，也是为了遵从网络无障碍辅助功能，当当前展开按钮是去焦点时，需要将其产生的 `side-effect` 消除掉；
+通常实现这个功能的方法是在 `window` 对象中附上一个 `click` 事件以关闭弹窗：
 + react 官网例子
 ```js
 componentDidMount() {
