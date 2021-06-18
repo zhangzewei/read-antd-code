@@ -38,6 +38,10 @@
   + [do-you-know-portal](./story/core-mind/do-you-know-portal.md)
   + [angular-data-flow](./story/core-mind/angular-data-flow.md)
   + [what-is-antd-trigger](./story/core-mind/what-is-antd-trigger.md)
+  + [angular-router-animation](./story/core-mind/angular-router-animation.md)
+  + [magic-of-form](./story/core-mind/magic-of-form.md)
+  + [wechat-mini-program-experience](./story/core-mind/wechat-mini-program-experience.md)
+  + [how-to-make-design-system](./story/core-mind/how-to-make-design-system.md)
 
 + SASS Roadmap
 
