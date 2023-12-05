@@ -1,6 +1,3 @@
-> github: [地址](https://github.com/zhangzewei/read-antd-code)
-> gitbook: [地址](https://zhangzewei.gitbooks.io/read-antd-code/content/)
-
 # Index.js
 看一个代码的时候首先当然是从他的入口文件开始看起，所以第一份代码我们看的是`/index.js`文件
 
